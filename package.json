@@ -4,7 +4,7 @@
   "engines": {
     "node": "6.11.1"
   },
-  "description": "YelpCamp v1",
+  "description": "JingqiTravel v1",
   "main": "app.js",
   "scripts": {
     "start": "node app",
