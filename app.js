@@ -23,10 +23,10 @@ var commentRoutes    = require("./routes/comments"),
 // assign mongoose promise library and connect to database
 mongoose.Promise = global.Promise;
 
-const databaseUri = process.env.MONGODB_URI || 'mongodb://localhost/jingqi_Web';
+//const databaseUri = process.env.MONGODB_URI || 'mongodb://localhost/jingqi_Web';
 
 
-//const databaseUri = "mongodb://jingqi:jingqi7@ds251223.mlab.com:51223/jingqitravel";
+const databaseUri = "mongodb://jingqi:jingqi7@ds251223.mlab.com:51223/jingqitravel";
 
 mongoose.connect(databaseUri, { useMongoClient: true })
       .then(() => console.log(`Database connected`))
