@@ -25,6 +25,9 @@ mongoose.Promise = global.Promise;
 
 const databaseUri = process.env.MONGODB_URI || 'mongodb://localhost/jingqi_Web';
 
+
+//const databaseUri = "mongodb://jingqi:jingqi7@ds251223.mlab.com:51223/jingqitravel";
+
 mongoose.connect(databaseUri, { useMongoClient: true })
       .then(() => console.log(`Database connected`))
       .catch(err => console.log(`Database connection error: ${err.message}`));
@@ -48,7 +51,7 @@ mongoose.connect(databaseUri, { useMongoClient: true })
         
 // //         Comment.create(
 // //   {
-// //      text: "I love this place! My baby girlfriend took me there to have lunch! We had 肉骨茶 there twice! ^_^",
+// //      text: "I love this place! Had 肉骨茶 there twice! ^_^",
 // //      author: "Jingqi"
 // //     },function(err,comment){
 // //         if(err){
@@ -70,7 +73,7 @@ app.use(methodOverride('_method'));
 app.use(cookieParser('secret'));
 //require moment
 app.locals.moment = require('moment');
-seedDB(); //seed the database
+//seedDB(); //seed the database
 
 // PASSPORT CONFIGURATION
 app.use(require("express-session")({
