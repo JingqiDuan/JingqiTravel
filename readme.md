@@ -1,3 +1,5 @@
-# YelpCamp
+# JingqiTravel
 
-### Refactored by Ian Schoonover
+### A node.js project based on udemy online course.
+
+https://jingqitravel.herokuapp.com/
